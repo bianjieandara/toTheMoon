@@ -5,7 +5,7 @@ font-family: sans-serif;
 }
 
 body{
-background-color: #fafafa;		
+background-color: #fafafa;
 }
 
 ul  li a{
@@ -13,7 +13,7 @@ float:left;
 text-decoration: none;
 display: block;
 padding: 20px;
-color: #fafafa;	
+color: #fafafa;
 font-size: 15px;
 font-weight: bold;
 }
@@ -33,6 +33,24 @@ background-color: #07988b;
 
 ul li:hover{
 height: 50px;
-background-color: black;	
+background-color: black;
 }
-
+.embed-responsive{
+    width: 50%;
+    height: 100%;
+    margin: 0 auto;
+    display: block;
+}
+.gal {
+	-webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+	}
+	.gal img{ width: 100%; padding: 7px 0;}
+@media (max-width: 500px) {
+		.gal {
+	-webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+	}
+	}
