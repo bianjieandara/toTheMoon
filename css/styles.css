@@ -5,9 +5,17 @@ font-family: sans-serif;
 }
 
 body{
-background-color: #fafafa;
+    background-image: url('http://i.imgur.com/ucT39uo.jpg');
 }
-
+.title{
+    padding-top: 30px;
+}
+.card{
+     background-color: rgba(118, 144, 250, 0.4)
+}
+.textdiv{
+    width: 60%;
+}
 ul  li a{
 float:left;
 text-decoration: none;
@@ -33,7 +41,7 @@ background-color: #07988b;
 
 ul li:hover{
 height: 50px;
-background-color: black;
+background-color: blue;
 }
 .embed-responsive{
     width: 50%;
