@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html ng-app="myapp">
+<head>
+<title>Conoce To The Moon</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<link rel="stylesheet" href="./css/styles.css">
+<link rel="stylesheet" href="http://www.atlasestateagents.co.uk/css/tether.min.css">
+<script src="http://www.atlasestateagents.co.uk/javascript/tether.min.js"></script>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+</head>
+<body>
+	
+
+<header>
+<nav><ul>
+	<li><a ui-sref="home">Home</a></li>   
+    <li><a ui-sref="game-play">Game Play</a></li>
+    <li><a ui-sref="history">History</a></li>
+    <li><a ui-sref="gallery">Gallery</a></li>
+    <li><a ui-sref="downloads">Downloads</a></li>
+</ul></nav>	
+</header>
+<div class="container" ng-controller='controller1 as ctrl1'>
+	<div class="row">	
+		<ui-view>
+		
+		</ui-view> 
+	</div>
+</div>
+
+
+
+<script src="./js/angular.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.min.js"></script>
+<script src="./js/app.js"></script>
+
+</body>
+</html>

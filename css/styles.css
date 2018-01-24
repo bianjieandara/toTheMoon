@@ -1,0 +1,38 @@
+*{
+margin: 0;
+padding: 0;
+font-family: sans-serif;
+}
+
+body{
+background-color: #fafafa;		
+}
+
+ul  li a{
+float:left;
+text-decoration: none;
+display: block;
+padding: 20px;
+color: #fafafa;	
+font-size: 15px;
+font-weight: bold;
+}
+
+ul li{
+text-decoration: none;
+display: block;
+height: 50px;
+}
+
+ul{
+background-color: #07988b;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+ul li:hover{
+height: 50px;
+background-color: black;	
+}
+
