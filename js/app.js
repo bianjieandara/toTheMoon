@@ -14,7 +14,22 @@ $stateProvider.state('home',{
 	url: "/home",
 	templateUrl: "./templates/home.html"
 })
-
+.state('history',{
+	url: "/history",
+	templateUrl: "./templates/history.html"
+})
+.state('gallery',{
+	url: "/gallery",
+	templateUrl: "./templates/gallery.html"
+})
+.state('game-play',{
+	url: "/game-play",
+	templateUrl: "./templates/game-play.html"
+})
+.state('downloads',{
+	url: "/downloads",
+	templateUrl: "./templates/downloads.html"
+})
 };
 
 function controller1() {
