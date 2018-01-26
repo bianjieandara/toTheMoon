@@ -1,11 +1,11 @@
 *{
 margin: 0;
 padding: 0;
-font-family: sans-serif;
+font-family: 'Indie Flower', cursive;
 }
 
 body{
-    background-image: url('http://i.imgur.com/ucT39uo.jpg');
+    background-image: url('../6805.jpg');
 }
 .title{
     padding-top: 30px;
@@ -14,15 +14,50 @@ body{
      background-color: rgba(118, 144, 250, 0.4)
 }
 .textdiv{
-    width: 60%;
+    width: 80%;
 }
+div {
+    text-align: center;
+}
+
+div#navbarText {
+    height: 50px;
+}
+
+div.up{
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    bottom: 50px;
+    right: 0;
+    background-color: #292b2c!important;
+}
+
+img.img-c{
+border-radius: 100%;
+width: 40%;
+height: 400px;
+display: inline-block;   
+}
+
+i.fa.fa-arrow-right {
+    color: #fafafa;   
+    padding-top: 65px;
+    padding-left: 3px;
+}
+
+i.fa.fa-arrow-up {
+    color: #fafafa;   
+    padding-top: 6px;
+}
+
 ul  li a{
 float:left;
 text-decoration: none;
 display: block;
 padding: 20px;
-color: #fafafa;
-font-size: 15px;
+color: rgba(255,255,255,.5);
+font-size: 17px;
 font-weight: bold;
 }
 
@@ -33,7 +68,6 @@ height: 50px;
 }
 
 ul{
-background-color: #282828;
     display: flex;
     padding: 0;
     margin: 0;
@@ -43,6 +77,18 @@ ul li:hover{
 height: 50px;
 background-color: black;
 }
+
+li.nav-item {
+    padding: 5px;
+}
+
+span.navbar-text {
+    margin: 0;
+    padding: 0;
+
+}
+
+
 .embed-responsive{
     width: 50%;
     height: 100%;
@@ -62,3 +108,162 @@ background-color: black;
     column-count: 1;
 	}
 	}
+
+
+
+
+@keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-webkit-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-moz-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-ms-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+
+@keyframes move-clouds-back {
+    from {background-position:0 0;}
+    to {background-position:10000px 0;}
+}
+@-webkit-keyframes move-clouds-back {
+    from {background-position:0 0;}
+    to {background-position:10000px 0;}
+}
+@-moz-keyframes move-clouds-back {
+    from {background-position:0 0;}
+    to {background-position:10000px 0;}
+}
+@-ms-keyframes move-clouds-back {
+    from {background-position: 0;}
+    to {background-position:10000px 0;}
+}
+
+.stars, .twinkling, .clouds {
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  width:100%;
+  height:100%;
+  display:block;
+}
+
+.stars {
+  background:#000 url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
+  z-index:0;
+}
+
+.twinkling{
+  background:transparent url(http://www.script-tutorials.com/demos/360/images/twinkling.png) repeat top center;
+  z-index:1;
+
+  -moz-animation:move-twink-back 200s linear infinite;
+  -ms-animation:move-twink-back 200s linear infinite;
+  -o-animation:move-twink-back 200s linear infinite;
+  -webkit-animation:move-twink-back 200s linear infinite;
+  animation:move-twink-back 200s linear infinite;
+}
+
+.clouds{
+    background:transparent url(http://www.script-tutorials.com/demos/360/images/clouds3.png) repeat top center;
+    z-index:3;
+
+  -moz-animation:move-clouds-back 200s linear infinite;
+  -ms-animation:move-clouds-back 200s linear infinite;
+  -o-animation:move-clouds-back 200s linear infinite;
+  -webkit-animation:move-clouds-back 200s linear infinite;
+  animation:move-clouds-back 200s linear infinite;
+}
+
+
+#redessociales {
+    width: 25px;
+    height: 150px;
+    background-color: #292b2c!important;
+    position: fixed;
+    top: 250px;
+}
+
+.smedia {
+  position: absolute;
+-webkit-transition: left 0.5s cubic-bezier(0.1,0.8,0.9,1), opacity 1s linear;
+-moz-transition: left 0.5s cubic-bezier(0.1,0.8,0.9,1),opacity 1s linear;
+-o-transition: left 0.5s cubic-bezier(0.1,0.8,0.9,1), opacity 1s linear;
+  display: inline;
+  opacity: 0;
+  width: 46px;
+  height: 46px;
+  z-index: 100;
+  margin:10px 0px 0px 20px;
+  text-indent: -9999px;
+  background: no-repeat;
+  left:3px;
+}
+
+#redessociales:hover .smedia {
+  opacity: 1;
+  transform: translate(0px,0);
+  -webkit-transform: translate(0px,0);
+  -o-transform: translate(0px,0); 
+  -moz-transform: translate(0px,0);
+  margin:10px 0px 0px 20px;
+  position: absolute;
+  left: 5px;
+}
+#redessociales:hover .smedia:nth-child(2) {
+  position: absolute;
+  top:65px;
+}
+
+#redessociales:hover .smedia:nth-child(3) {
+  position: absolute;
+  top:110px;
+}
+#redessociales:hover .smedia:nth-child(4) {
+  position: absolute;
+  top:155px;
+}
+#redessociales:hover .smedia:nth-child(5) {
+  position: absolute;
+  top: 20px;
+}
+#redessociales:hover .smedia:nth-child(6) {
+  position: absolute;
+  top:-25px;
+}
+
+#redessociales:hover .smedia:nth-child(7) {
+  position: absolute;
+  top:-70px;
+}
+
+.smedia.facebook {
+    background: url(https://4.bp.blogspot.com/-49s_0_9mdVo/UWHsMIvJBNI/AAAAAAAABn8/6bVMlN4Qz7Y/s1600/bubble_facebook_share_button.png);
+}
+.smedia.twitter {
+    background: url(https://2.bp.blogspot.com/-3r8sHe1Qy5M/UWHsNMDDzHI/AAAAAAAABog/q3V7mYirmOY/s1600/bubble_twitter_share_button.png);
+}
+.smedia.email {
+    background: url(https://3.bp.blogspot.com/-ZhFqBhp79cA/UWHsMBmPxsI/AAAAAAAABn4/O8k_pGf1oCU/s1600/bubble_email_share_button.png);
+}
+.smedia.instagram {
+    background: url(https://1.bp.blogspot.com/-FSkby0cXU_8/UWHsMis8c2I/AAAAAAAABoQ/y8coyc5ystc/s1600/bubble_instagram_share_button.png);
+}
+.smedia.youtube {
+    background: url(https://4.bp.blogspot.com/-x2oyT1dBzwA/UWHsNtcWXVI/AAAAAAAABo8/8kCXTVMbM6Y/s1600/bubble_youtube_share_button.png);
+}
+.smedia.vimeo {
+    background: url(https://2.bp.blogspot.com/-01SWPeX-584/UWHsNim9CAI/AAAAAAAABo4/Z9jMox_9UrE/s1600/bubble_vimeo_share_button.png);
+}
+.smedia:hover {
+    background-position: 0 -46px;
+}

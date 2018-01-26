@@ -2,6 +2,7 @@
 <html ng-app="myapp">
 <head>
 <title>Conoce To The Moon</title>
+<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 <link rel="stylesheet" href="./css/styles.css">
 <link rel="stylesheet" href="http://www.atlasestateagents.co.uk/css/tether.min.css">
@@ -11,27 +12,115 @@
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+<script src="https://use.fontawesome.com/5069f2510a.js"></script>
 </head>
+
 <body>
+  <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse sticky-top">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarText">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#game-play">Game Play</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#history">Historia</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="#gallery">Galeria</a>
+      </li>
+    </ul>
+    <span class="navbar-text">
+    <ul>
+    <li class="nav-item">
+      <a class="nav-link" href="#downloads">Descargas</a>
+      </li>
+      </ul>
+    </span>
+  </div>
+</nav>
 
-
-<header>
-<nav><ul>
-	<li><a ui-sref="home">Inicio</a></li>
-    <li><a ui-sref="game-play">Game Play</a></li>
-    <li><a ui-sref="history">Historia</a></li>
-    <li><a ui-sref="gallery">Galeria</a></li>
-    <li><a ui-sref="downloads">Descargas</a></li>
-</ul></nav>
-</header>
-<div class="container" ng-controller='controller1 as ctrl1'>
-	<div class="row">
-		<ui-view>
-
-		</ui-view>
-	</div>
+ <div id="redessociales">
+        <i class="fa fa-arrow-right" aria-hidden="true"></i>
+          <a class="smedia facebook" href="#">Uno</a>
+          <a class="smedia twitter" href="#">Dos</a>
+          <a class="smedia instagram" href="#">Tres</a>
+          <a class="smedia youtube" href="#">Cuatro</a>
+          <a class="smedia vimeo" href="#">Cinco</a>
+          <a class="smedia email" href="#">Seis</a>
 </div>
+<a href="#">
+<div class="up">
+ <i class="fa fa-arrow-up" aria-hidden="true"></i> 
+</div>
+</a>
 
+
+<div class="textdiv mx-auto">
+<h1 class="title text-center text-white" id="home">To The Moon</h1>
+
+<p class="text-white text-justify">To the Moon es un juego indie de aventuras RPG, sobre dos doctores que
+ viajan a través de los recuerdos de un hombre en su lecho de muerte para cumplir su último deseo.</p>
+ <img src="http://images6.fanpop.com/image/photos/38400000/To-the-Moon-Pictures-to-the-moon-38470509-900-1242.jpg" class="img-c" alt="">
+ 
+<h1 class="title text-center text-white" id="game-play">Game Play</h1>
+<p class="text-white text-justify">El estilo de juego de To The Moon a pesar de ser descrito como un RPG, los elementos RPG del juego son opcionales y
+la totalidad del juego gira en torno a la historia por lo tanto el publico lo recibio y clasifica como una aventura grafica. </p>
+
+<h1 class="title text-center text-white" id="history">Historia</h1>
+
+<p class="text-center text-white">-. Eva Rosalene y el Dr. Neil Watts tienen un trabajo bastante peculiar:</p>
+<div class="mx-auto card w-75 text-white text-center">Les dan a las personas otra oportunidad para vivir. Literalmente.</div><br>
+<p class="text-justify text-white">Existe una tecnología que permite a estos doctores crear recuerdos artificiales, de modo que un paciente pueda solicitar intentos de alterar su mente, y despertar con recuerdos de cosas que realmente no sucedieron.
+Sin embargo, ya que estos recuerdos son permanentes, el conflicto entre estos y los recuerdos auténticos existentes colisionan de tal forma que impiden que las habilidades de la persona funcionen adecuadamente.</p>
+<p class="text-justify text-white">Por tanto, la operación es realizada solamente en personas que estén ya en su lecho de muerte., con el fin de lograr lo que ellos hubiesen querido hacer con sus vidas… pero que al final no lograron.</p>
+<div class="mx-auto card w-75 text-white text-center">Pero crear un nuevo recuerdo no es tan sencillo como pulsar un botón.</div><br>
+<p class="text-justify text-white">Esta tecnología requiere que los doctores se adentren en los recuerdos del paciente, que a su vez son reconstruidos como escenas interactivas. Entonces, los doctores viajan gradualmente hacia atrás por los recuerdos de la vida del paciente, hasta llegar a su niñez — y es en ese momento, en el que se transfiere el deseo actual del paciente.</p>
+<p class="text-justify text-white">Gracias a la influencia de los doctores, el paciente (como niño) podría entonces llevar una vida enteramente distinta en su cabeza, trabajando para conseguirlo y logrando su último deseo por sus propios méritos.
+De salir todo bien, el paciente despertaría, habiendo vivido esa vida de ensueño que nunca tuvo, y con la oportunidad de abrazar un breve momento de total satisfacción.
+Poco tiempo después, daría su último aliento.</p>
+<div class="mx-auto card w-75 text-white text-center">Cada cierto tiempo, surge una vida que resulta bastante peculiar.</div><br>
+<p class="text-justify text-white">Esta historia particular sigue la historia de la Dra. Rosalene y el Dr. Watts’ en su intento de cumplir el sueño de un anciano moribundo, Johnny. Para lograr esta misión, viajan hacia atrás por los recuerdos del hombre, revelando ante sus ojos la curiosa historia de su vida.
+Con cada paso que retroceden en el tiempo, un nuevo fragmento del pasado de Johnny es descubierto. Y a medida que los dos doctores van uniendo los pedazos del gran rompecabezas que forman los eventos de toda una vida, intentan comprender por qué el frágil anciano escogió que su último deseo fuese el que es.
+Y el último deseo de Johnny es, por supuesto… ir a la luna.</p></div>
+
+<h1 class="title text-center text-white" id="gallery">Galeria</h1>
+<div class="gal">
+
+  <img src="https://i11d.3djuegos.com/juegos/7883/to_the_moon/fotos/ficha/to_the_moon-1889331.jpg" alt="">
+    <img src="https://f4.bcbits.com/img/a1974877315_10.jpg" alt="">
+        <img src="http://is3.mzstatic.com/image/thumb/Purple118/v4/dd/98/22/dd982205-d14a-9af3-6cb9-c25f92d278fc/source/520x293bb.jpg" alt="">
+  <img src="http://juegosdescargar.es/wp-content/uploads/2016/01/To-the-Moon-PC.jpg" alt="">
+        <img src="https://ugc.kn3.net/i/origin/http://www.playfam.com/upload/20140901/1409558696563.jpg" alt=""><img src="https://lh3.googleusercontent.com/OrEoGMuptEpaWTQUKebl-3E1seerzUJOZgtK7tSuQQWMkvXmdZ3_gks6yQILMe3VS-E=h900" alt="">
+        <img src="https://lh3.googleusercontent.com/0Y77FBZLr-LazudmyThcElmawi-ed8Q-wvH_6A1nV746VKCUG1XML_ZZoW9_4TNGv7E=h900" alt="">
+        <img src="https://img00.deviantart.net/f7a3/i/2013/336/d/f/to_the_moon_by_uyuni-d6wkj4d.jpg" alt="">
+        <img src="https://img.memecdn.com/to-the-moon-fanart_fb_1640849.jpg" alt="">
+        <img src="http://indiehaven.com/wp-content/uploads/2013/05/to_the_moon_by_keterok-d5bxw38.jpg" alt="">
+          <img src="https://static.gamespot.com/uploads/scale_medium/mig/7/2/8/1/2227281-to_the_moon_poster2.png" alt="">
+
+            <img src="http://freebirdgames.com/system/wp-content/uploads/lattice_jump-ttm-11.jpg" alt="">
+
+            <img src="https://waltorious.files.wordpress.com/2012/03/to-the-moon-screenshot-3_6_2012-5_19_07-pm.png" alt="">
+        <img src="http://1.bp.blogspot.com/-zlNqMFwRQ1o/UJ_Pt92UVhI/AAAAAAAAANE/8OYCwJ4ydQY/s1600/To-the-Moon-5.1.jpg" alt="">
+        <img src="https://i.pinimg.com/474x/02/33/95/0233955f6ff31f57ffdc316ba1b7d16d--to-the-moon-rpg-to-the-moon-game.jpg" alt="">
+        <img src="https://steamuserimages-a.akamaihd.net/ugc/923667520404104720/098AE42F1E46683EC34AA50B08D2C760178EEA8D/" alt="">
+
+  </div>
+
+  <div class="mx-auto">
+    <h1 class="title text-center text-white" id="downloads">Descargas</h1>
+    <p class="text-white text-center">debajo se encuentran links donde pueden comprar el juego</p>
+    <a href="http://store.steampowered.com/app/206440/"><img class="d-inline-block"src="https://steamstore-a.akamaihd.net/public/shared/images/responsive/share_steam_logo.png" width="200px" height="200px" alt=""></a>
+    <a href="http://www.gog.com/gamecard/to_the_moon"><img class="d-inline-block"src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Gog-logo-2014.svg/2000px-Gog-logo-2014.svg.png" width="200px" height="200px" alt=""></a>
+    <a href="https://www.humblebundle.com/store/p/tothemoon_storefront"><img class="d-inline-block"src="https://i.pinimg.com/originals/61/a0/39/61a039b763b82c1a7e41fa3c494ac58c.jpg" width="200px" height="200px" alt=""></a>
+    <a href="https://play.google.com/store/apps/details?id=com.xd.tothemoon"><img class="d-inline-block"src="https://www.tappointment.com/img/play_store_badge.svg" width="200px" height="200px" alt=""></a>
+    <a href="https://itunes.apple.com/app/to-the-moon/id1159700098?mt=8"><img class="d-inline-block"src="http://fotostore.ie/wp-content/uploads/2017/11/itunes-app-store-logo.png" width="200px" height="70px" alt=""></a>
+</div>
 
 
 <script src="./js/angular.min.js"></script>
